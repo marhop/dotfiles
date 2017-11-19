@@ -21,6 +21,7 @@ call plug#end()
 syntax on
 set number
 set linebreak
+set winwidth=84
 set foldmethod=syntax
 set laststatus=2
 set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V
