@@ -15,6 +15,7 @@ Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'sukima/xmledit'
+Plug 'tpope/vim-characterize'
 call plug#end()
 
 " Appearance.
