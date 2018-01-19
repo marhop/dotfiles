@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'sukima/xmledit'
 Plug 'tpope/vim-characterize'
+Plug 'neovimhaskell/haskell-vim'
 call plug#end()
 
 " Appearance.
