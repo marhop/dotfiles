@@ -11,6 +11,9 @@ case "$TERM" in
         ;;
 esac
 
+# PATH variable.
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
 # Aliases.
 alias ls='ls --color=auto'
 alias ll='ls -lh'
