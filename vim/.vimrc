@@ -69,7 +69,7 @@ noremap <c-l> <c-w><c-l>
 noremap ; ,
 noremap , ;
 noremap Y y$
-noremap Q gqap
+noremap Q gqip
 noremap <tab> <c-]>
 
 " User commands.
