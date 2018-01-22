@@ -17,6 +17,7 @@ Plug 'godlygeek/tabular'
 Plug 'sukima/xmledit'
 Plug 'tpope/vim-characterize'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Appearance.
