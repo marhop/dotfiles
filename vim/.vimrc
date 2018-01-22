@@ -24,7 +24,7 @@ call plug#end()
 syntax on
 set number
 set linebreak
-set winwidth=84
+set winwidth=86
 set foldmethod=syntax
 set laststatus=2
 set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V
@@ -45,7 +45,7 @@ set wildignorecase
 set encoding=utf-8
 set fileformat=unix
 set backspace=indent,eol,start
-set textwidth=78
+set textwidth=80
 set nojoinspaces
 
 " Tabs and indenting.
