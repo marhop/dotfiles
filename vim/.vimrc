@@ -18,8 +18,6 @@ Plug 'sukima/xmledit'
 Plug 'tpope/vim-characterize'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'w0rp/ale'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Appearance.
@@ -29,6 +27,7 @@ set linebreak
 set winwidth=86
 set foldmethod=syntax
 set laststatus=2
+set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V
 set background=dark
 colorscheme solarized
 set diffopt+=vertical
