@@ -3,3 +3,4 @@
 	email = martin@hoppenheit.info
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore.global
