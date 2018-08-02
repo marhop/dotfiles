@@ -18,6 +18,7 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias grep='grep --color=auto'
+alias fc='fc -e "vim -c \"set textwidth=0\""'
 
 # History.
 shopt -s histappend
