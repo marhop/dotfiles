@@ -1,6 +1,6 @@
 Configuration files for my shell environment.
 
-Installation:
+# Installation
 
  1. Make sure the following prerequisites are installed (package names are for
     Debian). In any case:
@@ -32,3 +32,32 @@ Installation:
 [hlint]: https://github.com/ndmitchell/hlint
 [hindent]: https://github.com/commercialhaskell/hindent
 [vim-plug]: https://github.com/junegunn/vim-plug
+
+# Random usage notes
+
+## Haskell development
+
+Start new projects in a virtual environment (Stackage snapshot lts-9.21 works
+well with Debian 9):
+
+    $ stack new --resolver lts-9.21 my-project simple
+    $ cd my-project
+    ...
+    $ stack build
+    $ stack exec my-project # or other binary name as specified in cabal file
+    $ stack clean
+
+Configure global (not project-specific) settings like which snapshot to use when
+calling `stack ghci` outside a project in `~/.stack/global-project/stack.yaml`.
+
+## Python development
+
+Start new projects in a virtual environment:
+
+    $ cd my-project
+    $ python3 -m venv .venv
+    $ source .venv/bin/activate
+    ...
+    $ pip install whatever
+    ...
+    $ deactivate
