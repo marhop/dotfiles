@@ -17,6 +17,7 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 # Aliases.
 alias ls='ls --color=auto'
 alias ll='ls -lh'
+alias t=tree
 alias grep='grep --color=auto'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 
