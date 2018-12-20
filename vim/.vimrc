@@ -76,3 +76,6 @@ noremap <tab> <c-]>
 
 " User commands.
 com -range=% -nargs=? Cnt :<line1>,<line2>s/<args>//gn
+
+" Plugin specific settings.
+let g:SuperTabDefaultCompletionType="context"
