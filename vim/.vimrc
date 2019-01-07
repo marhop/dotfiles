@@ -36,7 +36,6 @@ set diffopt+=vertical
 set incsearch
 set ignorecase
 set smartcase
-set nostartofline
 
 " File opening.
 set path+=**
