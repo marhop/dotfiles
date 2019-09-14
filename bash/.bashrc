@@ -27,6 +27,7 @@ HISTCONTROL=ignoreboth
 
 # Tab completion. Requires bash-completion package.
 . /usr/share/bash-completion/bash_completion
+[ -x "$(command -v stack)" ] && eval "$(stack --bash-completion-script stack)"
 
 # Update window size after each command.
 shopt -s checkwinsize
