@@ -1,3 +1,4 @@
 *.swp
-.stack-work/
 tags
+.stack-work/
+.mypy_cache/

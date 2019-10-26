@@ -14,6 +14,12 @@ Configuration files for my shell environment.
       * The [haskell-stack] package. Then, via stack, the [ghc-mod], [hlint],
         and [hindent] packages.
 
+    For Python development:
+
+      * The pipenv (packaging, dependency management, virtual environments)
+        flake8 (linting), python3-autopep8 (auto-formatting) and mypy (static
+        type annotations) packages.
+
  2. Clone to `~/.dotfiles/`.
 
  3. Inside the cloned repository, run `stow` for each required set of config
@@ -55,9 +61,7 @@ calling `stack ghci` outside a project in `~/.stack/global-project/stack.yaml`.
 Start new projects in a virtual environment:
 
     $ cd my-project
-    $ python3 -m venv .venv
-    $ source .venv/bin/activate
+    $ pipenv install [whatever] # no package just creates a Pipfile
+    $ pipenv shell
     ...
-    $ pip install whatever
-    ...
-    $ deactivate
+    $ exit
