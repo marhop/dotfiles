@@ -73,6 +73,7 @@ noremap , ;
 noremap Y y$
 noremap Q gqip
 noremap <tab> <c-]>
+noremap <F12> :vertical belowright terminal<CR>
 
 " User commands.
 com -range=% -nargs=? Cnt :<line1>,<line2>s/<args>//gn
