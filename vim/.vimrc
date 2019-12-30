@@ -6,7 +6,6 @@ filetype plugin indent on
 silent! call plug#begin()
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
-Plug 'jamessan/vim-gnupg'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'jayflo/vim-skip'
