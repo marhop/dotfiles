@@ -41,6 +41,7 @@ set smartcase
 " File opening.
 set path+=**
 set wildignorecase
+set wildmenu
 
 " Text formatting.
 set encoding=utf-8
