@@ -30,7 +30,7 @@ set laststatus=2
 set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V
 set background=dark
 set termguicolors
-colorscheme solarized8
+colorscheme solarized8_flat
 set diffopt+=vertical
 
 " Movement and searching.
