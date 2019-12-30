@@ -77,3 +77,4 @@ com -range=% -nargs=? Cnt :<line1>,<line2>s/<args>//gn
 
 " Plugin specific settings.
 let g:SuperTabDefaultCompletionType="context"
+let g:vim_markdown_folding_disabled=1
