@@ -10,7 +10,7 @@ Plug 'jamessan/vim-gnupg'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'jayflo/vim-skip'
-Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
@@ -30,7 +30,8 @@ set foldmethod=syntax
 set laststatus=2
 set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V
 set background=dark
-colorscheme solarized
+set termguicolors
+colorscheme solarized8
 set diffopt+=vertical
 
 " Movement and searching.
