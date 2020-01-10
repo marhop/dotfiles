@@ -11,8 +11,9 @@ Configuration files for my shell environment.
 
     For Haskell development:
 
-      * The [haskell-stack] package. Then, via stack, the [ghc-mod], [hlint],
-        and [hindent] packages.
+      * The [Stack][stack] tool (note that the Debian package may well be
+        outdated, so prefer direct download). Then, via stack, the [hlint]
+        (linting) and [hindent] (auto-formatting) packages.
 
     For Python development:
 
@@ -33,8 +34,7 @@ Configuration files for my shell environment.
     inside Vim to install all plugins listed in the `.vimrc` file.
 
 [stow]: https://www.gnu.org/software/stow/
-[haskell-stack]: https://docs.haskellstack.org/
-[ghc-mod]: https://github.com/DanielG/ghc-mod
+[stack]: https://docs.haskellstack.org/
 [hlint]: https://github.com/ndmitchell/hlint
 [hindent]: https://github.com/commercialhaskell/hindent
 [vim-plug]: https://github.com/junegunn/vim-plug
@@ -43,10 +43,9 @@ Configuration files for my shell environment.
 
 ## Haskell development
 
-Start new projects in a virtual environment (Stackage snapshot lts-9.21 works
-well with Debian 9):
+Start new projects in a virtual environment:
 
-    $ stack new --resolver lts-9.21 my-project simple
+    $ stack new my-project simple
     $ cd my-project
     ...
     $ stack build
