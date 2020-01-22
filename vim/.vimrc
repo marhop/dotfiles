@@ -27,11 +27,12 @@ set linebreak
 set winwidth=86
 set foldmethod=syntax
 set laststatus=2
-set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V
+set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V\ byte:%o(%O)
 set background=dark
 set termguicolors
 colorscheme solarized8_flat
 set diffopt+=vertical
+set display+=uhex
 
 " Movement and searching.
 set incsearch
