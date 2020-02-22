@@ -16,7 +16,7 @@ Plug 'godlygeek/tabular'
 Plug 'sukima/xmledit'
 Plug 'tpope/vim-characterize'
 Plug 'neovimhaskell/haskell-vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'marhop/vim-warc'
 call plug#end()
 
