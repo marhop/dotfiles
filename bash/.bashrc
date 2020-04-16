@@ -20,6 +20,7 @@ alias ll='ls -lh'
 alias t=tree
 alias grep='grep --color=auto'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
+alias py=python3
 
 # History.
 shopt -s histappend
