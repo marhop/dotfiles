@@ -75,6 +75,7 @@ noremap <F12> :vertical belowright terminal<CR>
 
 " User commands.
 com -range=% -nargs=? Cnt :<line1>,<line2>s/<args>//gn
+com TODO :vimgrep TODO %
 
 " Plugin specific settings.
 let g:SuperTabDefaultCompletionType="context"
