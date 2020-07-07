@@ -1,3 +1,4 @@
 :set prompt "\ESC[31m\STXλ \ESC[m\STX"
 :set editor vim
+:set +m
 :set -XOverloadedStrings
