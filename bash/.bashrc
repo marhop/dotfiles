@@ -21,6 +21,7 @@ alias t=tree
 alias grep='grep --color=auto'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
+alias et='exiftool -a -U -s -e -G0:1'
 
 # History.
 shopt -s histappend
