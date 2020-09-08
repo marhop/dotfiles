@@ -12,7 +12,8 @@ case "$TERM" in
 esac
 
 # PATH variable.
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+PATH="$HOME/bin:$PATH"
+[ -f "/home/martin/.ghcup/env" ] && source "/home/martin/.ghcup/env"
 
 # Aliases.
 alias ls='ls --color=auto'
@@ -29,7 +30,6 @@ HISTCONTROL=ignoreboth
 
 # Tab completion. Requires bash-completion package.
 . /usr/share/bash-completion/bash_completion
-[ -x "$(command -v stack)" ] && eval "$(stack --bash-completion-script stack)"
 
 # Update window size after each command.
 shopt -s checkwinsize

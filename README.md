@@ -11,9 +11,8 @@ Configuration files for my shell environment.
 
     For Haskell development:
 
-      * The [Stack][stack] tool (note that the Debian package may well be
-        outdated, so prefer direct download). Then, via stack, the [hlint]
-        (linting) and [hindent] (auto-formatting) packages.
+      * The [ghcup] installer (includes ghc and cabal). Then install [hlint]
+        (linting) and [hindent] (auto-formatting) with `cabal install`.
 
     For Python development:
 
@@ -34,26 +33,26 @@ Configuration files for my shell environment.
     inside Vim to install all plugins listed in the `.vimrc` file.
 
 [stow]: https://www.gnu.org/software/stow/
-[stack]: https://docs.haskellstack.org/
+[ghcup]: https://www.haskell.org/ghcup/
 [hlint]: https://github.com/ndmitchell/hlint
-[hindent]: https://github.com/commercialhaskell/hindent
+[hindent]: https://github.com/mihaimaruseac/hindent
 [vim-plug]: https://github.com/junegunn/vim-plug
 
 # Random usage notes
 
 ## Haskell development
 
-Start new projects in a virtual environment:
+Start new projects:
 
-    $ stack new my-project simple
+    $ mkdir my-project
     $ cd my-project
+    $ cabal init -i
     ...
-    $ stack build
-    $ stack exec my-project # or other binary name as specified in cabal file
-    $ stack clean
+    $ cabal build
+    $ cabal run
 
-Configure global (not project-specific) settings like which snapshot to use when
-calling `stack ghci` outside a project in `~/.stack/global-project/stack.yaml`.
+See also
+<https://schooloffp.co/2020/08/17/whirlwind-tour-of-cabal-for-beginners.html>.
 
 ## Python development
 
