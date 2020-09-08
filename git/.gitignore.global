@@ -1,4 +1,4 @@
 *.swp
 tags
-.stack-work/
+dist-newstyle/
 .mypy_cache/
