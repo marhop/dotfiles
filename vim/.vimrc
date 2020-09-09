@@ -12,7 +12,7 @@ Plug 'jayflo/vim-skip'
 Plug 'lifepillar/vim-solarized8'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
-Plug 'godlygeek/tabular'
+Plug 'junegunn/vim-easy-align'
 Plug 'sukima/xmledit'
 Plug 'tpope/vim-characterize'
 Plug 'neovimhaskell/haskell-vim'
@@ -81,3 +81,5 @@ com TODO :vimgrep TODO %
 " Plugin specific settings.
 let g:SuperTabDefaultCompletionType="context"
 let g:vim_markdown_folding_disabled=1
+nmap gl <Plug>(EasyAlign)
+xmap gl <Plug>(EasyAlign)
