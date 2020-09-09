@@ -18,6 +18,7 @@ Plug 'tpope/vim-characterize'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'dense-analysis/ale'
 Plug 'marhop/vim-warc'
+Plug 'MTDL9/vim-log-highlighting'
 call plug#end()
 
 " Appearance.
