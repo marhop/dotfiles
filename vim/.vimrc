@@ -31,6 +31,8 @@ set laststatus=2
 set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]\ row:%l/%L\ col:%c%V\ byte:%o(%O)
 set background=dark
 set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme solarized8_flat
 set diffopt+=vertical
 set display+=uhex
