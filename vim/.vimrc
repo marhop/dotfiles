@@ -82,6 +82,7 @@ com TODO :vimgrep TODO %
 
 " Plugin specific settings.
 let g:SuperTabDefaultCompletionType="context"
+let g:ale_completion_enabled=1
 let g:vim_markdown_folding_disabled=1
 nmap gl <Plug>(EasyAlign)
 xmap gl <Plug>(EasyAlign)
