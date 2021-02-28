@@ -24,6 +24,9 @@ alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
 alias et='exiftool -a -U -s -e -G0:1'
 
+# Recursive globbing with ** pattern.
+shopt -s globstar
+
 # History.
 shopt -s histappend
 HISTCONTROL=ignoreboth
