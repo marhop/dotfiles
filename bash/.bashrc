@@ -12,7 +12,7 @@ case "$TERM" in
 esac
 
 # PATH variable.
-PATH="$HOME/bin:$PATH"
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 [ -f "/home/martin/.ghcup/env" ] && source "/home/martin/.ghcup/env"
 
 # Aliases.
