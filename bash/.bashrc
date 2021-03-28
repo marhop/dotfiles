@@ -1,15 +1,8 @@
 # If not running interactively, don't do anything.
 [ -z "$PS1" ] && return
 
-# Prompt and xterm title.
-PS1='\[\e[01;32m\]\u@\h:\[\e[01;34m\]\W\[\e[00m\]\$ '
-case "$TERM" in
-    xterm*|rxvt*)
-        PS1="\[\e]0;\u@\h: \W\a\]$PS1"
-        ;;
-    *)
-        ;;
-esac
+# Prompt title.
+PS1='\[\e[1;34m\]\]\u@\h:\[\e[1;36m\]\]\W\[\e[1;34m\]\]\$\[\e[00m\]\] '
 
 # PATH variable.
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
