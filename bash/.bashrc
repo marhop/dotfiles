@@ -2,7 +2,7 @@
 [ -z "$PS1" ] && return
 
 # Prompt title.
-PS1='\[\e[1;34m\]\]\u@\h:\[\e[1;36m\]\]\W\[\e[1;34m\]\]\$\[\e[00m\]\] '
+PS1='\[\e[01;34m\]\u@\h\[\e[00m\]:\[\e[01;36m\]\W\[\e[00m\]\$ '
 
 # PATH variable.
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
