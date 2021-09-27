@@ -41,6 +41,7 @@ set display+=uhex
 set incsearch
 set ignorecase
 set smartcase
+set grepprg=ag\ --vimgrep
 
 " File opening.
 set path+=**
