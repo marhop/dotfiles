@@ -12,7 +12,6 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias t=tree
-alias grep='grep --color=auto'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
 alias et='exiftool -a -U -s -e -G0:1'
