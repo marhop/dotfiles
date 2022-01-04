@@ -15,6 +15,8 @@ alias t=tree
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
 alias et='exiftool -a -U -s -e -G0:1'
+alias ffmpeg='ffmpeg -hide_banner'
+alias ffprobe='ffprobe -hide_banner'
 
 # Recursive globbing with ** pattern.
 shopt -s globstar
