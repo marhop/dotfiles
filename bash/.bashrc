@@ -12,7 +12,7 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias t=tree
-alias less='less -F -R -X'
+alias less='less -F -R -X -i'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
 alias et='exiftool -a -U -s -e -G0:1'
