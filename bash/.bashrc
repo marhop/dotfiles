@@ -26,8 +26,9 @@ shopt -s globstar
 shopt -s histappend
 HISTCONTROL=ignoreboth
 
-# Tab completion. Requires bash-completion package.
+# Tab completion and fuzzy finding. Requires bash-completion and fzf packages.
 . /usr/share/bash-completion/bash_completion
+. /usr/share/doc/fzf/examples/key-bindings.bash
 
 # Update window size after each command.
 shopt -s checkwinsize
