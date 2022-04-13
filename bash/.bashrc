@@ -10,9 +10,9 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
     . /home/martin/.ghcup/env
 
 # Aliases.
-alias ls='ls --color=auto'
-alias ll='ls -lh'
-alias t=tree
+alias ll='exa -l'
+[ -x "$(command -v exa)" ] || alias ll='ls -lh'
+alias llt='exa -lT'
 alias less='less -F -R -X -i'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
