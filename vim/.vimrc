@@ -29,7 +29,7 @@ set linebreak
 set winwidth=86
 set foldmethod=syntax
 set laststatus=2
-set statusline=%r%f%m%=%y[%{&enc}][%{&ff}][%l/%L\ %c%V]
+set statusline=%r%f%m%=%y[%{&enc}][%{&ff}]%{&bomb?'[BOM]':''}[%l/%L\ %c%V]
 set background=dark
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
