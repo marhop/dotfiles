@@ -5,8 +5,8 @@ setlocal formatprg=ormolu
 setlocal suffixesadd+=.hs,.lhs
 setlocal includeexpr=substitute(v:fname,'\\.','/','g')
 
-" Haskell Language Server
-let b:ale_linters = {'haskell': ['hls']}
+" ALE + Haskell Language Server, HLint
+let b:ale_linters = {'haskell': ['hls', 'hlint']}
 noremap gd :ALEGoToDefinition<CR>
 noremap K :ALEHover<CR>
 
