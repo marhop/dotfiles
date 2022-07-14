@@ -1,5 +1,12 @@
 " formatting
-setlocal formatprg=ormolu
+function Ormolu()
+    let v = winsaveview()
+    execute '%!ormolu --stdin-input-file ' . bufname('%')
+          . ' --start-line ' . v:lnum
+          . ' --end-line ' . (v:lnum + v:count - 1)
+    call winrestview(v)
+endfunction
+setlocal formatexpr=Ormolu()
 
 " gf command
 setlocal suffixesadd+=.hs,.lhs
