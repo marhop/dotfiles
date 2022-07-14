@@ -11,8 +11,8 @@ Configuration files for my shell environment.
 
     For Haskell development:
 
-      * The [ghcup] installer (includes ghc and cabal). Then install [hlint]
-        (linting) and [hindent] (auto-formatting) with `cabal install`.
+      * GHC, cabal and HLS via [ghcup].
+      * Then, the [hlint] linter and the [ormolu] formatter via `cabal install`.
 
     For Python development:
 
@@ -35,7 +35,7 @@ Configuration files for my shell environment.
 [stow]: https://www.gnu.org/software/stow/
 [ghcup]: https://www.haskell.org/ghcup/
 [hlint]: https://github.com/ndmitchell/hlint
-[hindent]: https://github.com/mihaimaruseac/hindent
+[ormolu]: https://github.com/tweag/ormolu
 [vim-plug]: https://github.com/junegunn/vim-plug
 
 # Random usage notes
