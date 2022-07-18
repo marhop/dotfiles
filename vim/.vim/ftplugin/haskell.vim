@@ -2,8 +2,8 @@
 function Ormolu()
     let v = winsaveview()
     execute '%!ormolu --stdin-input-file ' . bufname('%')
-          . ' --start-line ' . v:lnum
-          . ' --end-line ' . (v:lnum + v:count - 1)
+                \ . ' --start-line ' . v:lnum
+                \ . ' --end-line ' . (v:lnum + v:count - 1)
     call winrestview(v)
 endfunction
 setlocal formatexpr=Ormolu()
