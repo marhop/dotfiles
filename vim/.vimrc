@@ -44,10 +44,11 @@ set ignorecase
 set smartcase
 set grepprg=ag\ --vimgrep
 
-" File opening.
+" File opening and command line completion.
 set path+=**
 set wildignorecase
 set wildmenu
+set wildoptions+=pum
 
 " Text formatting.
 set encoding=utf-8
