@@ -76,7 +76,6 @@ noremap Ä {
 noremap ; ,
 noremap , ;
 noremap Y y$
-noremap Q gqip
 noremap <tab> <c-]>
 noremap <F12> :vertical belowright terminal<CR>
 
