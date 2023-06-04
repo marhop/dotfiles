@@ -9,7 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'jayflo/vim-skip'
-Plug 'lifepillar/vim-solarized8'
+Plug 'nordtheme/vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'chrisbra/matchit'
@@ -29,11 +29,8 @@ set winwidth=86
 set foldmethod=syntax
 set laststatus=2
 set statusline=%r%f%m%=%{&ft}\ %{&enc}\ %{&bomb?'BOM\ ':''}%{&ff}\ %l/%L\ %c%V
-set background=dark
 set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-colorscheme solarized8_flat
+colorscheme nord
 set conceallevel=2
 set diffopt+=vertical
 set display+=uhex
