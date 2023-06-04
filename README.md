@@ -20,22 +20,26 @@ Configuration files for my shell environment.
         flake8 (linting), python3-autopep8 (auto-formatting) and mypy (static
         type annotations) packages.
 
- 2. Clone to `~/.dotfiles/`.
+ 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
+    [Nord][nord] color theme.
 
- 3. Inside the cloned repository, run `stow` for each required set of config
+ 3. Clone to `~/.dotfiles/`.
+
+ 4. Inside the cloned repository, run `stow` for each required set of config
     files to create the respective symlinks in `~`. Example:
 
         $ stow bash
         $ stow vim
         $ stow haskell
 
- 4. Install the [vim-plug] plugin manager for Vim. Then run `:PlugUpdate` from
+ 5. Install the [vim-plug] plugin manager for Vim. Then run `:PlugUpdate` from
     inside Vim to install all plugins listed in the `.vimrc` file.
 
 [stow]: https://www.gnu.org/software/stow/
 [ghcup]: https://www.haskell.org/ghcup/
 [hlint]: https://github.com/ndmitchell/hlint
 [ormolu]: https://github.com/tweag/ormolu
+[nord]: https://www.nordtheme.com/
 [vim-plug]: https://github.com/junegunn/vim-plug
 
 # Random usage notes
