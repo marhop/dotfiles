@@ -29,7 +29,9 @@ set winwidth=86
 set foldmethod=syntax
 set laststatus=2
 set statusline=%r%f%m%=%{&ft}\ %{&enc}\ %{&bomb?'BOM\ ':''}%{&ff}\ %l/%L\ %c%V
+set fillchars+=vert:\ 
 set termguicolors
+let g:nord_uniform_status_lines=1
 colorscheme nord
 set conceallevel=2
 set diffopt+=vertical
