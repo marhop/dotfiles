@@ -5,3 +5,5 @@ function Autopep8()
     call winrestview(v)
 endfunction
 setlocal formatexpr=Autopep8()
+setlocal shiftwidth=4
+setlocal tabstop=4
