@@ -2,38 +2,40 @@ Configuration files for my shell environment.
 
 # Installation
 
- 1. Make sure the following prerequisites are installed (package names are for
-    Debian). In any case:
+1. Make sure the following prerequisites are installed (package names are for
+   Debian). In any case:
 
-      * The [stow] package for "installation" of the config files.
-      * Obviously, the bash, git, tmux, and vim packages.
-      * The bash-completion package for Bash tab completion.
+   * The [stow] package for "installation" of the config files.
+   * Obviously, the bash, git, tmux, and vim packages.
+   * The bash-completion package for Bash tab completion.
 
-    For Haskell development:
+   For Haskell development:
 
-      * GHC, cabal and HLS via [ghcup].
-      * Then, the [hlint] linter and the [ormolu] formatter via `cabal install`.
+   * GHC, cabal and HLS via [ghcup].
+   * Then, the [hlint] linter and the [ormolu] formatter via `cabal install`.
 
-    For Python development:
+   For Python development:
 
-      * The pipenv (packaging, dependency management, virtual environments)
-        flake8 (linting), python3-autopep8 (auto-formatting) and mypy (static
-        type annotations) packages.
+   * The pipenv (packaging, dependency management, virtual environments) flake8
+     (linting), python3-autopep8 (auto-formatting) and mypy (static type
+     annotations) packages.
 
- 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
-    [Nord][nord] color theme.
+2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
+   [Nord][nord] color theme.
 
- 3. Clone to `~/.dotfiles/`.
+3. Clone to `~/.dotfiles/`.
 
- 4. Inside the cloned repository, run `stow` for each required set of config
-    files to create the respective symlinks in `~`. Example:
+4. Inside the cloned repository, run `stow` for each required set of config
+   files to create the respective symlinks in `~`. Example:
 
-        $ stow bash
-        $ stow vim
-        $ stow haskell
+   ~~~console
+   $ stow bash
+   $ stow vim
+   $ stow haskell
+   ~~~
 
- 5. Install the [vim-plug] plugin manager for Vim. Then run `:PlugUpdate` from
-    inside Vim to install all plugins listed in the `.vimrc` file.
+5. Install the [vim-plug] plugin manager for Vim. Then run `:PlugUpdate` from
+   inside Vim to install all plugins listed in the `.vimrc` file.
 
 [stow]: https://www.gnu.org/software/stow/
 [ghcup]: https://www.haskell.org/ghcup/
@@ -48,12 +50,14 @@ Configuration files for my shell environment.
 
 Start new projects:
 
-    $ mkdir my-project
-    $ cd my-project
-    $ cabal init -i
-    ...
-    $ cabal build
-    $ cabal run
+~~~console
+$ mkdir my-project
+$ cd my-project
+$ cabal init -i
+...
+$ cabal build
+$ cabal run
+~~~
 
 See also
 <https://schooloffp.co/2020/08/17/whirlwind-tour-of-cabal-for-beginners.html>.
@@ -62,8 +66,10 @@ See also
 
 Start new projects in a virtual environment:
 
-    $ cd my-project
-    $ pipenv install [whatever] # no package just creates a Pipfile
-    $ pipenv shell
-    ...
-    $ exit
+~~~console
+$ cd my-project
+$ pipenv install [whatever] # no package just creates a Pipfile
+$ pipenv shell
+...
+$ exit
+~~~
