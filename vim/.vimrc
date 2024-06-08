@@ -19,6 +19,7 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'dense-analysis/ale'
 Plug 'marhop/vim-warc'
 Plug 'MTDL9/vim-log-highlighting'
+Plug 'lervag/vimtex'
 call plug#end()
 
 " Appearance.
