@@ -20,6 +20,7 @@ Plug 'dense-analysis/ale'
 Plug 'marhop/vim-warc'
 Plug 'MTDL9/vim-log-highlighting'
 Plug 'lervag/vimtex'
+Plug 'mechatroner/rainbow_csv'
 call plug#end()
 
 " Appearance.
