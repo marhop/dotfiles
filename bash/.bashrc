@@ -3,6 +3,7 @@
 
 # Prompt title.
 PS1='\[\e[31m\]■\[\e[00m\] '
+PS2='\[\e[31m\]□\[\e[00m\] '
 
 # PATH variable.
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
