@@ -21,6 +21,7 @@ Plug 'marhop/vim-warc'
 Plug 'MTDL9/vim-log-highlighting'
 Plug 'lervag/vimtex'
 Plug 'mechatroner/rainbow_csv'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 " Appearance.
