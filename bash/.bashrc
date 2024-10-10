@@ -6,7 +6,7 @@ PS1='\[\e[31m\]■\[\e[00m\] '
 PS2='\[\e[31m\]□\[\e[00m\] '
 
 # PATH variable.
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 [ -f /home/martin/.ghcup/env ] &&
     . /home/martin/.ghcup/env
 
