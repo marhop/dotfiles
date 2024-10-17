@@ -11,9 +11,9 @@ PATH="$HOME/.local/bin:$PATH"
     . /home/martin/.ghcup/env
 
 # Aliases.
-alias ll='exa -l --group-directories-first'
-[ -x "$(command -v exa)" ] || alias ll='ls -lh --group-directories-first'
-alias llt='exa -lT --group-directories-first'
+alias ll='eza -l --group-directories-first'
+[ -x "$(command -v eza)" ] || alias ll='ls -lh --group-directories-first'
+alias llt='eza -lT --group-directories-first'
 alias less='less -F -R -X -i'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
