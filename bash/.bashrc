@@ -24,8 +24,7 @@ alias ffprobe='ffprobe -hide_banner'
 # Tab completion and fuzzy finding. Requires bash-completion and fzf packages.
 [ -f /usr/share/bash-completion/bash_completion ] &&
     . /usr/share/bash-completion/bash_completion
-[ -f /usr/share/doc/fzf/examples/key-bindings.bash ] &&
-    . /usr/share/doc/fzf/examples/key-bindings.bash
+eval "$(fzf --bash)"
 
 # Recursive globbing with ** pattern.
 shopt -s globstar
