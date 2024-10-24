@@ -18,4 +18,4 @@ noremap gd :ALEGoToDefinition<CR>
 noremap K :ALEHover<CR>
 
 " misc
-com! TODO :vimgrep TODO\|undefined %
+com! TODO :vimgrep /\C\<TODO\>\|\<undefined\>/ %
