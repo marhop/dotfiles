@@ -47,7 +47,7 @@ set display+=uhex
 set incsearch
 set ignorecase
 set smartcase
-set grepprg=ag\ --vimgrep\ $*
+set grepprg=ag\ --vimgrep\ --filename\ --column\ $*
 set grepformat=%f:%l:%c:%m
 
 " File opening and command line completion.
