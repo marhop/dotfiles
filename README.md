@@ -3,7 +3,7 @@ Configuration files for my shell environment.
 # Installation
 
 1. Make sure the following prerequisites are installed (package names are for
-   Debian). In any case:
+   Debian/Arch). In any case:
 
    * The [stow] package for "installation" of the config files.
    * Obviously, the bash, git, tmux, and vim packages.
@@ -16,9 +16,9 @@ Configuration files for my shell environment.
 
    For Python development:
 
-   * The pipenv (packaging, dependency management, virtual environments) flake8
-     (linting), python3-autopep8 (auto-formatting) and mypy (static type
-     annotations) packages.
+   * The pipenv/python-pipenv (packaging, dependency management, virtual
+     environments) flake8 (linting), python3-autopep8/autopep8 (auto-formatting)
+     and mypy (static type annotations) packages.
 
 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
    [Nord][nord] color theme.
