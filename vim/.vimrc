@@ -31,7 +31,7 @@ set linebreak
 set winwidth=86
 set foldmethod=syntax
 set laststatus=2
-set statusline=%r%f%m%=%{&ft}\ %{&enc}\ %{&bomb?'BOM\ ':''}%{&ff}\ %l/%L\ %c%V
+set statusline=%r%f%m%=%{&ft}\ %{&enc}\ %{&bomb?'BOM\ ':''}%{&ff}\ %{%Position()%}
 set fillchars+=vert:\ 
 set termguicolors
 let g:nord_uniform_status_lines=1
@@ -42,6 +42,14 @@ colorscheme nord
 set conceallevel=2
 set diffopt+=vertical
 set display+=uhex
+
+function Position()
+  if &binary
+    let offset = line2byte(line('.')) + col('.') - 2
+    return printf("%d 0x%x", offset, offset)
+  else
+    return '%l/%c%V'
+endfunction
 
 " Movement and searching.
 set incsearch
