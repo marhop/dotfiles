@@ -90,6 +90,7 @@ noremap ; ,
 noremap , ;
 noremap Y y$
 noremap <tab> <c-]>
+noremap - '
 
 " User commands.
 com -range=% -nargs=? Cnt :<line1>,<line2>s/<args>//gn
