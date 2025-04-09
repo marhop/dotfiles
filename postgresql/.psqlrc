@@ -1,0 +1,4 @@
+-- Switch between table and record display depending on available width.
+\x auto
+-- Render NULL as "NULL" instead of empty string.
+\pset null NULL
