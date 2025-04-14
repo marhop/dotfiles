@@ -55,7 +55,7 @@ endfunction
 set incsearch
 set ignorecase
 set smartcase
-set grepprg=ag\ --vimgrep\ --filename\ --column\ $*
+set grepprg=rg\ --vimgrep\ --smart-case
 set grepformat=%f:%l:%c:%m
 
 " File opening and command line completion.
