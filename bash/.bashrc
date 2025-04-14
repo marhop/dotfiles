@@ -15,6 +15,7 @@ alias ll='eza -l --group-directories-first'
 [ -x "$(command -v eza)" ] || alias ll='ls -lh --group-directories-first'
 alias llt='eza -lT --group-directories-first'
 alias less='less -F -R -X -i'
+alias rg='rg --smart-case'
 alias fc='fc -e "vim -c \"set textwidth=0\""'
 alias py=python3
 alias et='exiftool -a -U -s -e -G0:1'
