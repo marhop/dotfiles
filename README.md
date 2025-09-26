@@ -5,20 +5,21 @@ Configuration files for my shell environment.
 1. Make sure the following prerequisites are installed (package names are for
    Debian/Arch). In any case:
 
-   * The [stow] package for "installation" of the config files.
-   * Obviously, the bash, git, tmux, and vim packages.
-   * The bash-completion package for Bash tab completion.
+   - The [stow] package for "installation" of the config files.
+   - Obviously, the bash, git, tmux, and vim/neovim packages.
+   - The bash-completion package for Bash tab completion.
+   - The ripgrep package for the rg search tool.
 
    For Haskell development:
 
-   * GHC, cabal and HLS via [ghcup].
-   * Then, the [hlint] linter and the [ormolu] formatter via `cabal install`.
+   - The GHCup installer according to the instructions on its [website][ghcup].
+   - GHC, cabal and HLS via GHCup.
 
    For Python development:
 
-   * The pipenv/python-pipenv (packaging, dependency management, virtual
-     environments) flake8 (linting), python3-autopep8/autopep8 (auto-formatting)
-     and mypy (static type annotations) packages.
+   - The pipenv/python-pipenv (packaging, dependency management, virtual
+     environments), flake8 (linting), python3-autopep8/autopep8
+     (auto-formatting) and mypy (static type annotations) packages.
 
 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
    [Nord][nord] color theme.
@@ -34,8 +35,9 @@ Configuration files for my shell environment.
    $ stow haskell
    ~~~
 
-5. Install the [vim-plug] plugin manager for Vim. Then run `:PlugUpdate` from
-   inside Vim to install all plugins listed in the `.vimrc` file.
+5. Install the [vim-plug] plugin manager for Vim/Neovim. Then run `:PlugUpdate`
+   from inside Vim/Neovim to install all plugins listed in the `.vimrc` or
+   `init.vim` file, respectively.
 
 [stow]: https://www.gnu.org/software/stow/
 [ghcup]: https://www.haskell.org/ghcup/
