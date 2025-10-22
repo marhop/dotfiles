@@ -18,8 +18,9 @@ Configuration files for my shell environment.
    For Python development:
 
    - The pipenv/python-pipenv (packaging, dependency management, virtual
-     environments), flake8 (linting), python3-autopep8/autopep8
-     (auto-formatting) and mypy (static type annotations) packages.
+     environments), python3-pylsp/python-lsp-server (LSP server),
+     flake8/python-flake8 (linting), and python3-autopep8/autopep8
+     (auto-formatting) packages.
 
 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
    [Nord][nord] color theme.
@@ -69,6 +70,7 @@ See also
 Start new projects in a virtual environment:
 
 ~~~console
+$ mkdir my-project
 $ cd my-project
 $ pipenv install [whatever] # no package just creates a Pipfile
 $ pipenv shell

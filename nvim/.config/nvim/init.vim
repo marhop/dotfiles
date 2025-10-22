@@ -24,6 +24,7 @@ set shiftround
 
 " LSP
 lua vim.lsp.enable('hls')
+lua vim.lsp.enable('pylsp')
 
 " Searching
 set nohlsearch
