@@ -6,21 +6,23 @@ Configuration files for my shell environment.
    Debian/Arch). In any case:
 
    - The [stow] package for "installation" of the config files.
-   - Obviously, the bash, git, tmux, and vim/neovim packages.
+   - Obviously, the bash, git, tmux, and (neo)vim packages.
    - The bash-completion package for Bash tab completion.
    - The ripgrep package for the rg search tool.
 
    For Haskell development:
 
    - The GHCup installer according to the instructions on its [website][ghcup].
-   - GHC, cabal and HLS via GHCup.
+   - GHC, cabal, and HLS via GHCup.
 
    For Python development:
 
-   - The pipenv/python-pipenv (packaging, dependency management, virtual
-     environments), python3-pylsp/python-lsp-server (LSP server),
-     flake8/python-flake8 (linting), and python3-autopep8/autopep8
-     (auto-formatting) packages.
+   - The pipenv/python-pipenv package (packaging, dependency management, virtual
+     environments).
+   - The python3-pylsp/python-lsp-server package (LSP server).
+   - The flake8/python-flake8 package (linting).
+   - The python3-autopep8/autopep8 package (auto-formatting).
+   - The mypy and python3-pylsp-mypy/python-pylsp-mypy packages (type checking).
 
 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
    [Nord][nord] color theme.
