@@ -14,7 +14,6 @@ PATH="$HOME/.local/bin:$PATH"
 alias ll='ls -lh --group-directories-first'
 [ -x "$(command -v eza)" ] && alias ll='eza -l --group-directories-first'
 alias llt='eza -lT --group-directories-first'
-[ -x "$(command -v nvim)" ] && alias vim=nvim
 alias less='less -F -R -X -i'
 alias rg='rg --smart-case'
 alias fc='fc -e "vim -c \"set textwidth=0\""'

@@ -1,5 +1,5 @@
 :set prompt "\ESC[31m\STXλ \ESC[m\STX"
 :set prompt-cont "\ESC[31m\STX>   \ESC[m\STX"
-:set editor nvim
+:set editor vim
 :set +m
 :set -XOverloadedStrings

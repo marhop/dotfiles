@@ -6,7 +6,7 @@ Configuration files for my shell environment.
    Debian/Arch). In any case:
 
    - The [stow] package for "installation" of the config files.
-   - Obviously, the bash, git, tmux, and (neo)vim packages.
+   - Obviously, the bash, git, tmux, and vim packages.
    - The bash-completion package for Bash tab completion.
    - The ripgrep package for the rg search tool.
 
@@ -38,14 +38,11 @@ Configuration files for my shell environment.
    $ stow haskell
    ~~~
 
-5. Install the [vim-plug] plugin manager for Vim/Neovim. Then run `:PlugUpdate`
-   from inside Vim/Neovim to install all plugins listed in the `.vimrc` or
-   `init.vim` file, respectively.
+5. Install the [vim-plug] plugin manager for Vim. Then run `:PlugUpdate` from
+   inside Vim to install all plugins listed in the `.vimrc` file.
 
 [stow]: https://www.gnu.org/software/stow/
 [ghcup]: https://www.haskell.org/ghcup/
-[hlint]: https://github.com/ndmitchell/hlint
-[ormolu]: https://github.com/tweag/ormolu
 [nord]: https://www.nordtheme.com/
 [vim-plug]: https://github.com/junegunn/vim-plug
 
