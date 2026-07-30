@@ -1,7 +1,13 @@
 theme = "nord"
 
-[editor.gutters]
-layout = ["diagnostics", "spacer", "diff"] # But no "line-numbers".
+[editor]
+gutters = ["diagnostics", "spacer", "diff"] # But no "line-numbers".
+
+[keys.normal]
+"ö" = "command_mode"
+"-" = "search"
+"ä" = "goto_next_paragraph"
+"Ä" = "goto_prev_paragraph"
 
 [keys.insert]
 j = { k = "normal_mode" }
@@ -9,9 +15,3 @@ j = { k = "normal_mode" }
 [keys.insert."C-k"]
 - = { ">" = "@→"}
 O = { K = "@✓"}
-
-[keys.normal]
-"ö" = "command_mode"
-"-" = "search"
-"ä" = "goto_next_paragraph"
-"Ä" = "goto_prev_paragraph"
