@@ -7,8 +7,8 @@ layout = ["diagnostics", "spacer", "diff"] # But no "line-numbers".
 j = { k = "normal_mode" }
 
 [keys.insert."C-k"]
-- = { ">" = ["normal_mode", ":insert-output echo '→'", "move_char_right", "insert_mode"]}
-O = { K = ["normal_mode", ":insert-output echo '✓'", "move_char_right", "insert_mode"]}
+- = { ">" = "@→"}
+O = { K = "@✓"}
 
 [keys.normal]
 "ö" = "command_mode"
