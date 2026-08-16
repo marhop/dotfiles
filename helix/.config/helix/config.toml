@@ -9,6 +9,12 @@ gutters = ["diagnostics", "spacer", "diff"] # But no "line-numbers".
 "ä" = "goto_next_paragraph"
 "Ä" = "goto_prev_paragraph"
 
+[keys.select]
+"ö" = "command_mode"
+"-" = "search"
+"ä" = "goto_next_paragraph"
+"Ä" = "goto_prev_paragraph"
+
 [keys.insert]
 j = { k = "normal_mode" }
 
