@@ -10,7 +10,6 @@ Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-characterize'
-Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Appearance.
