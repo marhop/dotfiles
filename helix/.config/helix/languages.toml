@@ -1,0 +1,3 @@
+[[language]]
+name = "markdown"
+formatter = { command = "pandoc", args = ["--from=markdown", "--to=markdown", "--columns=80"] }
