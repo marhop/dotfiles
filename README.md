@@ -10,6 +10,13 @@ Configuration files for my shell environment.
    - The bash-completion package for Bash tab completion.
    - The ripgrep package for the rg search tool.
 
+   Optional but nice:
+
+   - The hx/helix package (or the upstream .tar.gz) for even fancier editing, in
+     particular when using LSP servers (see below, both HLS and pylsp work
+     ootb).
+   - The mdformat package (auto-formatting for Markdown).
+
    For Haskell development:
 
    - The GHCup installer according to the instructions on its [website][ghcup].
@@ -25,26 +32,21 @@ Configuration files for my shell environment.
    - The mypy and python3-pylsp-mypy/python-pylsp-mypy packages (type checking).
 
 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
-   [Nord][nord] color theme.
+   [Nord] color theme.
 
 3. Clone to `~/.dotfiles/`.
 
 4. Inside the cloned repository, run `stow` for each required set of config
    files to create the respective symlinks in `~`. Example:
 
-   ~~~console
+   ```console
    $ stow bash
    $ stow vim
    $ stow haskell
-   ~~~
+   ```
 
 5. Install the [vim-plug] plugin manager for Vim. Then run `:PlugUpdate` from
    inside Vim to install all plugins listed in the `.vimrc` file.
-
-[stow]: https://www.gnu.org/software/stow/
-[ghcup]: https://www.haskell.org/ghcup/
-[nord]: https://www.nordtheme.com/
-[vim-plug]: https://github.com/junegunn/vim-plug
 
 # Random usage notes
 
@@ -52,14 +54,14 @@ Configuration files for my shell environment.
 
 Start new projects:
 
-~~~console
+```console
 $ mkdir my-project
 $ cd my-project
 $ cabal init -i
 ...
 $ cabal build
 $ cabal run
-~~~
+```
 
 See also
 <https://schooloffp.co/2020/08/17/whirlwind-tour-of-cabal-for-beginners.html>.
@@ -68,11 +70,16 @@ See also
 
 Start new projects in a virtual environment:
 
-~~~console
+```console
 $ mkdir my-project
 $ cd my-project
 $ pipenv install [whatever] # no package just creates a Pipfile
 $ pipenv shell
 ...
 $ exit
-~~~
+```
+
+[ghcup]: https://www.haskell.org/ghcup/
+[nord]: https://www.nordtheme.com/
+[stow]: https://www.gnu.org/software/stow/
+[vim-plug]: https://github.com/junegunn/vim-plug
