@@ -3,6 +3,10 @@ theme = "nord"
 [editor]
 gutters = ["diagnostics", "spacer", "diff"] # But no "line-numbers".
 
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+
 [keys.normal]
 "ö" = "command_mode"
 "-" = "search"
