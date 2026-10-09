@@ -13,8 +13,8 @@ Configuration files for my shell environment.
    Optional but nice:
 
    - The hx/helix package (or the upstream .tar.gz) for even fancier editing, in
-     particular when using LSP servers (see below, both HLS and pylsp work
-     ootb).
+     particular when using LSP language servers (see below, both HLS and pylsp
+     work ootb).
    - The mdformat package (auto-formatting for Markdown).
 
    For Haskell development:
@@ -26,10 +26,16 @@ Configuration files for my shell environment.
 
    - The pipenv/python-pipenv package (packaging, dependency management, virtual
      environments).
-   - The python3-pylsp/python-lsp-server package (LSP server).
+   - The python3-pylsp/python-lsp-server package (language server).
    - The flake8/python-flake8 package (linting).
    - The python3-autopep8/autopep8 package (auto-formatting).
    - The mypy and python3-pylsp-mypy/python-pylsp-mypy packages (type checking).
+
+   For XML development:
+
+   - The [Lemminx] language server. There's an AUR package vor Arch (lemminx),
+     but no Debian package. Pre-compiled JARs (`org.eclipse.lemminx-uber.jar`)
+     are [here](https://get.debian.org/mirror/eclipse.org/lemminx/releases/).
 
 2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
    [Nord] color theme.
@@ -80,6 +86,7 @@ $ exit
 ```
 
 [ghcup]: https://www.haskell.org/ghcup/
+[lemminx]: https://github.com/eclipse-lemminx/lemminx
 [nord]: https://www.nordtheme.com/
 [stow]: https://www.gnu.org/software/stow/
 [vim-plug]: https://github.com/junegunn/vim-plug

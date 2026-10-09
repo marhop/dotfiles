@@ -1,3 +1,10 @@
 [[language]]
 name = "markdown"
 formatter = { command = "mdformat", args = ["--wrap", "80", "--number", "-"] }
+
+[[language]]
+name = "xml"
+language-servers = [ "lemminx" ]
+
+[language-server.lemminx]
+command = "lemminx"
