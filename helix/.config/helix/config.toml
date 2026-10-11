@@ -12,12 +12,14 @@ wrap-at-text-width = true
 "-" = "search"
 "ä" = "goto_next_paragraph"
 "Ä" = "goto_prev_paragraph"
+"space" = { "-" = "global_search" }
 
 [keys.select]
 "ö" = "command_mode"
 "-" = "search"
 "ä" = "goto_next_paragraph"
 "Ä" = "goto_prev_paragraph"
+"space" = { "-" = "global_search" }
 
 [keys.insert]
 j = { k = "normal_mode" }
