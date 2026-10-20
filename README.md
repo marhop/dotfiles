@@ -37,8 +37,8 @@ Configuration files for my shell environment.
      but no Debian package. Pre-compiled JARs (`org.eclipse.lemminx-uber.jar`)
      are [here](https://get.debian.org/mirror/eclipse.org/lemminx/releases/).
 
-2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with the
-   [Nord] color theme.
+2. Configure terminal emulator (Gnome Terminal, Putty, ...) for use with a light
+   color palette (e.g., GNOME light).
 
 3. Clone to `~/.dotfiles/`.
 
@@ -87,6 +87,5 @@ $ exit
 
 [ghcup]: https://www.haskell.org/ghcup/
 [lemminx]: https://github.com/eclipse-lemminx/lemminx
-[nord]: https://www.nordtheme.com/
 [stow]: https://www.gnu.org/software/stow/
 [vim-plug]: https://github.com/junegunn/vim-plug

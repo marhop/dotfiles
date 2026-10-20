@@ -1,4 +1,4 @@
-theme = "nord"
+theme = "term16_light"
 
 [editor]
 gutters = ["diagnostics", "spacer", "diff"] # But no "line-numbers".
