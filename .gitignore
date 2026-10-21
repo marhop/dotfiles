@@ -2,6 +2,3 @@ vim/.vim/autoload/plug.vim
 vim/.vim/autoload/plug.vim.old
 vim/.vim/plugged/
 vim/.vim/.netrwhist
-
-haskell/.stack/*
-!haskell/.stack/config.yaml
