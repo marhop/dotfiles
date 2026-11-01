@@ -103,3 +103,6 @@ hook global WinSetOption filetype=xml %{
   alias window format lsp-formatting
   # set-option window formatcmd 'xmllint --format -'
 }
+
+# Disable Clippy
+set-option -add global ui_options terminal_assistant=none
