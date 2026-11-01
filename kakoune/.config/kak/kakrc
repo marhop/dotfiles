@@ -1,0 +1,32 @@
+# Map jk = esc
+hook global InsertChar k %{
+  try %{
+    exec -draft hH <a-k>jk<ret> d
+    exec -with-hooks <esc>
+  }
+}
+
+# Enter command prompt with ö
+map global normal ö :
+
+# Tab display width and indent
+set-option global tabstop 2
+set-option global indentwidth 2
+
+# Window splitting, horizontal
+define-command split \
+  -docstring "open file in horizontal tmux split" \
+  -params .. %{
+    tmux-terminal-vertical kak -c %val{session} %arg{@}
+  }
+complete-command split file
+alias global hsplit split
+
+# Window splitting, vertical
+define-command vsplit \
+  -docstring "open file in vertical tmux split" \
+  -params .. %{
+    tmux-terminal-horizontal kak -c %val{session} %arg{@}
+  }
+complete-command vsplit file
+alias global new vsplit
