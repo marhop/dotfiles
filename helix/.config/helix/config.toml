@@ -2,6 +2,7 @@ theme = "term16_light"
 
 [editor]
 gutters = ["diagnostics", "spacer", "diff"] # But no "line-numbers".
+popup-border = "all"
 
 [editor.soft-wrap]
 enable = true
