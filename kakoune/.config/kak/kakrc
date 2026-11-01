@@ -50,6 +50,11 @@ define-command vsplit \
 complete-command vsplit file
 alias global new vsplit
 
+# Close all windows
+define-command quit-all %{
+  evaluate-commands -client * quit
+}
+
 # Tab completion
 hook global InsertCompletionShow .* %{
   map window insert <tab> <c-n>
