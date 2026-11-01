@@ -19,6 +19,15 @@ map global normal Ü {p
 map global normal <a-ü> <a-[>p
 map global normal <a-Ü> <a-{>p
 
+# Swap / and ? (search) with - and _, like on a US keyboard
+# (No need to restore <minus> since that seems to be a NOP anyway.)
+map global normal <minus> /
+map global normal <a-minus> <a-/>
+map global normal _ ?
+map global normal <a-_> <a-?>
+map global normal ß _
+map global normal <a-ß> <a-_>
+
 # Tab display width and indent
 set-option global tabstop 2
 set-option global indentwidth 2
