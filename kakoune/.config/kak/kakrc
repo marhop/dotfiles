@@ -74,3 +74,32 @@ map global object f '<a-semicolon>lsp-object Function Method<ret>' -docstring 'L
 map global object t '<a-semicolon>lsp-object Class Interface Module Namespace Struct<ret>' -docstring 'LSP class or module'
 map global object d '<a-semicolon>lsp-diagnostic-object error warning<ret>' -docstring 'LSP errors and warnings'
 map global object D '<a-semicolon>lsp-diagnostic-object error<ret>' -docstring 'LSP errors'
+
+# Filetype specifics
+hook global WinSetOption filetype=haskell %{
+  lsp-enable-window
+  alias window format lsp-formatting
+}
+hook global WinSetOption filetype=json %{
+  set-option window formatcmd 'jq .'
+}
+hook global WinSetOption filetype=markdown %{
+  set-option window formatcmd 'mdformat --wrap 80 --number -'
+}
+hook global WinSetOption filetype=python %{
+  lsp-enable-window
+  alias window format lsp-formatting
+}
+hook global WinSetOption filetype=xml %{
+  # Register Lemminx because kakoune-lsp doesn't know about it
+  set-option window lsp_servers %{
+    [lemminx]
+    root_globs = [".git", ".hg"]
+    settings_section = "_"
+    [lemminx.settings._]
+    xml.format.maxLineWidth = 0
+  }
+  lsp-enable-window
+  alias window format lsp-formatting
+  # set-option window formatcmd 'xmllint --format -'
+}
