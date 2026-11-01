@@ -40,3 +40,13 @@ define-command vsplit \
   }
 complete-command vsplit file
 alias global new vsplit
+
+# Tab completion
+hook global InsertCompletionShow .* %{
+  map window insert <tab> <c-n>
+  map window insert <s-tab> <c-p>
+}
+hook global InsertCompletionHide .* %{
+  unmap window insert <tab> <c-n>
+  unmap window insert <s-tab> <c-p>
+}
