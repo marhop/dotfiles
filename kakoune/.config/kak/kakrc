@@ -9,6 +9,16 @@ hook global InsertChar k %{
 # Enter command prompt with ö
 map global normal ö :
 
+# Easy paragraph selection
+map global normal ä ]p
+map global normal Ä }p
+map global normal <a-ä> <a-]>p
+map global normal <a-Ä> <a-}>p
+map global normal ü [p
+map global normal Ü {p
+map global normal <a-ü> <a-[>p
+map global normal <a-Ü> <a-{>p
+
 # Tab display width and indent
 set-option global tabstop 2
 set-option global indentwidth 2
