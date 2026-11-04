@@ -85,6 +85,10 @@ hook global WinSetOption filetype=haskell %{
   lsp-enable-window
   alias window format lsp-formatting
 }
+hook global WinSetOption filetype=java %{
+  lsp-enable-window
+  alias window format lsp-formatting
+}
 hook global WinSetOption filetype=json %{
   set-option window formatcmd 'jq .'
 }
