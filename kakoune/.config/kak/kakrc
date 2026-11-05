@@ -55,6 +55,22 @@ define-command quit-all %{
   evaluate-commands -client * quit
 }
 
+# Recursively open files
+define-command find \
+  -docstring "find file" \
+  -params 1 %{
+    edit %arg{1}
+  }
+complete-command find shell-script-candidates %{ fd -tf }
+
+# Recursively open files, including hidden ones
+define-command find-hidden \
+  -docstring "find file, including hidden" \
+  -params 1 %{
+    edit %arg{1}
+  }
+complete-command find-hidden shell-script-candidates %{ fd -tf -HI }
+
 # Tab completion
 hook global InsertCompletionShow .* %{
   map window insert <tab> <c-n>
