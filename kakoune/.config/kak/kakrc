@@ -32,26 +32,15 @@ map global normal <a-ß> <a-_>
 set-option global tabstop 2
 set-option global indentwidth 2
 
-# Window splitting, horizontal
-define-command split \
-  -docstring "open file in horizontal tmux split" \
-  -params .. %{
-    tmux-terminal-vertical kak -c %val{session} %arg{@}
-  }
-complete-command split file
-alias global hsplit split
-
-# Window splitting, vertical
-define-command vsplit \
-  -docstring "open file in vertical tmux split" \
-  -params .. %{
-    tmux-terminal-horizontal kak -c %val{session} %arg{@}
-  }
-complete-command vsplit file
-alias global new vsplit
+# Create new clients to the right, or below
+set-option global windowing_placement horizontal
+define-command new-below -docstring "like new, but open below" %{
+  set-option local windowing_placement vertical
+  new
+}
 
 # Close all windows
-define-command quit-all %{
+define-command quit-all -docstring "quit all clients" %{
   evaluate-commands -client * quit
 }
 
@@ -116,7 +105,7 @@ hook global WinSetOption filetype=python %{
   alias window format lsp-formatting
 }
 hook global WinSetOption filetype=xml %{
-  # Register Lemminx because kakoune-lsp doesn't know about it
+  # Register Lemminx because kakoune-lsp up to v22.0.0 doesn't know about it
   set-option window lsp_servers %{
     [lemminx]
     root_globs = [".git", ".hg"]
