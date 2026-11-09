@@ -28,6 +28,9 @@ map global normal <a-_> <a-?>
 map global normal ß _
 map global normal <a-ß> <a-_>
 
+# Commenting
+map global normal '#' :comment-line<ret>
+
 # Tab display width and indent
 set-option global tabstop 2
 set-option global indentwidth 2
