@@ -76,6 +76,9 @@ hook global InsertCompletionHide .* %{
   unmap window insert <s-tab> <c-p>
 }
 
+# Highlight matching parens
+add-highlighter global/ show-matching -previous
+
 # Language Server setup
 eval %sh{kak-lsp}
 set-option global modelinefmt "%opt{lsp_modeline} %opt{modelinefmt}"
