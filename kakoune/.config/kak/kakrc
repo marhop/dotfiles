@@ -60,6 +60,9 @@ define-command find-hidden \
   }
 complete-command find-hidden shell-script-candidates %{ fd -tf -HI }
 
+# Use rg as grepcmd
+set-option global grepcmd 'rg --smart-case'
+
 # Tab completion
 hook global InsertCompletionShow .* %{
   map window insert <tab> <c-n>
